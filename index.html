@@ -698,11 +698,11 @@ input,select,textarea{font-family:inherit}
 .proj:hover .proj__action{opacity:1;transform:translate(0,0)}
 .proj__action svg{width:14px;height:14px;stroke:var(--gold);fill:none;stroke-width:2}
 
-/* Pattern fills per project */
-.p1-bg{background:linear-gradient(135deg,#111008 0%,#1a1600 40%,#0d0c00 100%)}
-.p2-bg{background:linear-gradient(135deg,#0a0a0a 0%,#131000 100%)}
-.p3-bg{background:linear-gradient(135deg,#0d0d0d 0%,#0f0e00 100%)}
-.p4-bg{background:linear-gradient(135deg,#090909 0%,#111000 100%)}
+/* Real project images — your own work */
+.p1-bg{background-image:url('img-melamina.jpg');background-size:cover;background-position:center top}
+.p2-bg{background-image:url('img-drywall.jpg');background-size:cover;background-position:center}
+.p3-bg{background-image:url('img-estructura.jpg');background-size:cover;background-position:center top}
+.p4-bg{background-image:url('img-pintura.jpg');background-size:cover;background-position:center}
 
 .vis-lines line{stroke:rgba(201,168,76,.08);stroke-width:1}
 .vis-grid rect{fill:none;stroke:rgba(201,168,76,.06)}
@@ -1369,19 +1369,6 @@ footer{
     <div class="projects__mosaic" role="list">
 
       <article class="proj p1-bg r r-d1" role="listitem" aria-label="Closet Modular Premium">
-        <div class="proj__vis" aria-hidden="true">
-          <svg class="proj__vis-pattern" viewBox="0 0 400 600" preserveAspectRatio="xMidYMid slice">
-            <defs><style>.vl{stroke:rgba(201,168,76,.1);stroke-width:0.5;fill:none}</style></defs>
-            <rect x="40" y="60" width="300" height="400" class="vl"/>
-            <rect x="80" y="100" width="220" height="320" class="vl"/>
-            <line x1="40" y1="260" x2="340" y2="260" class="vl"/>
-            <line x1="190" y1="60" x2="190" y2="460" class="vl"/>
-            <line x1="40" y1="60" x2="80" y2="100" class="vl"/>
-            <line x1="340" y1="60" x2="300" y2="100" class="vl"/>
-            <line x1="340" y1="460" x2="300" y2="420" class="vl"/>
-            <line x1="40" y1="460" x2="80" y2="420" class="vl"/>
-          </svg>
-        </div>
         <div class="proj__overlay"></div>
         <div class="proj__info">
           <p class="proj__tag">Diseño 3D &amp; Melamina</p>
@@ -1394,13 +1381,6 @@ footer{
       </article>
 
       <article class="proj p2-bg r r-d2" role="listitem" aria-label="Oficinas Corporativas">
-        <div class="proj__vis" aria-hidden="true">
-          <svg class="proj__vis-pattern" viewBox="0 0 400 400" preserveAspectRatio="xMidYMid slice">
-            <rect x="50" y="50" width="300" height="300" class="vl" style="stroke:rgba(201,168,76,.09)"/>
-            <line x1="50" y1="200" x2="350" y2="200" style="stroke:rgba(201,168,76,.07);stroke-width:0.5"/>
-            <line x1="200" y1="50" x2="200" y2="350" style="stroke:rgba(201,168,76,.07);stroke-width:0.5"/>
-          </svg>
-        </div>
         <div class="proj__overlay"></div>
         <div class="proj__info">
           <p class="proj__tag">Drywall</p>
@@ -1413,12 +1393,6 @@ footer{
       </article>
 
       <article class="proj p3-bg r r-d3" role="listitem" aria-label="Nave Industrial">
-        <div class="proj__vis" aria-hidden="true">
-          <svg class="proj__vis-pattern" viewBox="0 0 400 400" preserveAspectRatio="xMidYMid slice">
-            <polygon points="200,40 360,140 360,300 200,360 40,300 40,140" style="stroke:rgba(201,168,76,.09);stroke-width:0.5;fill:none"/>
-            <line x1="200" y1="40" x2="200" y2="360" style="stroke:rgba(201,168,76,.07);stroke-width:0.5"/>
-          </svg>
-        </div>
         <div class="proj__overlay"></div>
         <div class="proj__info">
           <p class="proj__tag">Estructuras Metálicas</p>
@@ -1431,13 +1405,6 @@ footer{
       </article>
 
       <article class="proj p4-bg r r-d4" role="listitem" aria-label="Residencia Privada">
-        <div class="proj__vis" aria-hidden="true">
-          <svg class="proj__vis-pattern" viewBox="0 0 400 400" preserveAspectRatio="xMidYMid slice">
-            <circle cx="200" cy="200" r="150" style="stroke:rgba(201,168,76,.08);stroke-width:0.5;fill:none"/>
-            <circle cx="200" cy="200" r="100" style="stroke:rgba(201,168,76,.06);stroke-width:0.5;fill:none"/>
-            <circle cx="200" cy="200" r="50" style="stroke:rgba(201,168,76,.1);stroke-width:0.5;fill:none"/>
-          </svg>
-        </div>
         <div class="proj__overlay"></div>
         <div class="proj__info">
           <p class="proj__tag">Pintura &amp; Acabados</p>
@@ -1617,7 +1584,7 @@ footer{
             </div>
           </a>
 
-          <a href="https://facebook.com/AlainEstudio3D" target="_blank" rel="noopener" class="channel" aria-label="Visitar página de Facebook">
+          <a href="https://www.facebook.com/profile.php?id=61578469553863" target="_blank" rel="noopener" class="channel" aria-label="Visitar página de Facebook">
             <div class="channel__icon" aria-hidden="true">
               <svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
             </div>
@@ -1695,7 +1662,7 @@ footer{
         <a href="https://wa.me/51921943761" target="_blank" rel="noopener" class="fsocial" aria-label="WhatsApp">
           <svg viewBox="0 0 24 24"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg>
         </a>
-        <a href="https://facebook.com/AlainEstudio3D" target="_blank" rel="noopener" class="fsocial" aria-label="Facebook">
+        <a href="https://www.facebook.com/profile.php?id=61578469553863" target="_blank" rel="noopener" class="fsocial" aria-label="Facebook">
           <svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
         </a>
       </div>
@@ -1723,7 +1690,7 @@ footer{
       <nav class="footer__links" aria-label="Contacto">
         <a href="https://wa.me/51921943761" target="_blank" rel="noopener">+51 921 943 761</a>
         <a href="#">Arequipa, Perú</a>
-        <a href="https://facebook.com/AlainEstudio3D" target="_blank" rel="noopener">Facebook</a>
+        <a href="https://www.facebook.com/profile.php?id=61578469553863" target="_blank" rel="noopener">Facebook</a>
       </nav>
     </div>
   </div>
